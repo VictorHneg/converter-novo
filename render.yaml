@@ -1,8 +1,8 @@
+# render.yaml
+
 services:
   - type: web
-    name: seu-app
+    name: seu-app # Pode dar o nome que quiser
     env: python
-  
     buildCommand: "mise settings set python_compile 1 && mise install && mise exec -- pip install -r requirements.txt"
-    #
     startCommand: "mise exec -- gunicorn app:app"
