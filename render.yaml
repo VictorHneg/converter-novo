@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: seu-app
+    env: python
+  
+    buildCommand: "mise settings set python_compile 1 && mise install && mise exec -- pip install -r requirements.txt"
+    #
+    startCommand: "mise exec -- gunicorn app:app"
