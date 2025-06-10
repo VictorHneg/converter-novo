@@ -1,0 +1,5 @@
+# Adicione este bloco no seu arquivo fly.toml
+
+[build]
+  [build.args]
+    MISE_PYTHON_COMPILE = "1"
