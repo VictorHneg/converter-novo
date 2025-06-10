@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: markdown-to-docx-converter
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn projeto.app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FLASK_ENV
+        value: production
+    plan: free
