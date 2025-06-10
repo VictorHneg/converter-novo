@@ -5,4 +5,8 @@ google-auth-oauthlib==1.1.0
 google-auth-httplib2==0.2.0
 google-api-python-client==2.108.0
 gunicorn==21.2.0
+<<<<<<< HEAD
 Werkzeug==3.0.1
+=======
+Werkzeug==3.0.1
+>>>>>>> a480256188753a7cc0652fdc139d66179947c859
